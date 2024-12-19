@@ -12,7 +12,13 @@ To create the OOD sample from MNIST, we add a guassian noise to add a distributi
 By minimizing the distance between the learning representation (i.e. layers output) between ID and OOD using either MSE or OT, the pre-trained model is able generalize to OODs and improve the accuracy from accuracy of ~0.5 to ~0.9 (by ~ 40%).
 
 
-![](./results.png)
+![](./results_paired.png)
 
 
-Awesome! Next steps will involve assuming that pairs are not known and that fewer OOD classes exist. Stay tuned!
+Awesome! Now lets assume that the pairing between IDs and OODs is unkown (by shuffling the OODs). In this case, feature alignment with OT works but with MSE does not, and accuracy improves from ~0.5 to ~0.8 (by ~ 30%). 
+
+![](./results_unpaired.png)
+
+Next steps will involve assuming that only fewer OOD classes exist. Stay tuned!
+
+
