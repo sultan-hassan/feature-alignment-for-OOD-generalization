@@ -297,9 +297,6 @@ def align_representation_ot(model_id, model_ood, data_loader_id, data_loader_ood
 
     return average_loss, average_accuracy
 
-
-
-
 def test_one_epoch(model, data_loader, loss_fn):
     """
     Evaluates the model for one epoch on the given dataset.
